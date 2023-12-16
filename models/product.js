@@ -1,6 +1,10 @@
 import mongoose from "mongoose";
 
 const schema = new mongoose.Schema({
+  id: {
+    type: String,
+    required: true,
+  },
   title: {
     type: String,
     required: true,
@@ -28,7 +32,7 @@ const schema = new mongoose.Schema({
       type: Number,
       default: 120,
     },
-  }
+  },
 });
 
 export const Procduct = mongoose.model("Procduct", schema);
