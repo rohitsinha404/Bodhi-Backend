@@ -56,16 +56,16 @@ const schema = new mongoose.Schema({
       rating: {
         rate: {
           type: Number,
-          required: number,
+          required: true,
         },
         count: {
-          type: number,
+          type: Number,
           required: true,
         },
       },
       __v: {
         required: false,
-        type: number,
+        type: Number,
       },
       _id: {
         type: String,
