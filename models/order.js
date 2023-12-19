@@ -29,8 +29,22 @@ const schema = new mongoose.Schema({
       required: true,
     },
   },
-  orderItems: [
+  cart: [
     {
+      description: {
+        type: String,
+        required: true,
+      },
+
+      id: {
+        type: Number,
+        required: true,
+      },
+
+      image: {
+        type: String,
+        required: true,
+      },
       title: {
         type: String,
         required: true,
@@ -39,17 +53,22 @@ const schema = new mongoose.Schema({
         type: Number,
         required: true,
       },
-      quantity: {
-        type: Number,
-        required: true,
+      rating: {
+        rate: {
+          type: Number,
+          required: number,
+        },
+        count: {
+          type: number,
+          required: true,
+        },
       },
-      image: {
+      __v: {
+        required: false,
+        type: number,
+      },
+      _id: {
         type: String,
-        required: true,
-      },
-      product: {
-        type: mongoose.Schema.ObjectId,
-        ref: "Product",
         required: true,
       },
     },
