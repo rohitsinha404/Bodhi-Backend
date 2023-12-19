@@ -76,7 +76,7 @@ const schema = new mongoose.Schema({
   user: {
     type: mongoose.Schema.ObjectId,
     ref: "User",
-    required: true,
+    required: false,
   },
   totalPrice: {
     type: Number,
