@@ -33,43 +33,34 @@ const schema = new mongoose.Schema({
     {
       description: {
         type: String,
-        required: true,
       },
 
       id: {
         type: Number,
-        required: true,
       },
 
       image: {
         type: String,
-        required: true,
       },
       title: {
         type: String,
-        required: true,
       },
       price: {
         type: Number,
-        required: true,
       },
       rating: {
         rate: {
           type: Number,
-          required: true,
         },
         count: {
           type: Number,
-          required: true,
         },
       },
       __v: {
-        required: false,
         type: Number,
       },
       _id: {
         type: String,
-        required: true,
       },
     },
   ],
